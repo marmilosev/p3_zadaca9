@@ -35,6 +35,8 @@ export function HomeScreen({ route, navigation }) {
           email: email,
           password: password,
           passwordAgain: passwordAgain,
+          dateBirth : dateBirth,
+          placeBirth : placeBirth,
         }),
       });
       setName('');
@@ -98,6 +100,7 @@ export function HomeScreen({ route, navigation }) {
           style={styles.input}
           onChangeText={setPasswordAgain}
           value={passwordAgain}
+          secureTextEntry={true}
         />
       </View>
 
